@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Upload the model";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Upload the model</h1>
+    <p>
+        Upload your zipped Tensorflow JS model.
+    </p>
+
+    <form class="col-xs-12" method="post" action="/App/UploadModel" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <input type="file" class="form-control" name="image" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary col-xs-12">Upload</button>
+        </div>
+    </form>
+
+</div>
